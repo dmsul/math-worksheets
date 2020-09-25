@@ -1,6 +1,8 @@
 Math Worksheet Generator
 ------------------------
 
+Requires Python 3.6+ (f-strings).
+
 Usage:
 1. Edit the Python file `generate_pages.py` to desired output, e.g., number of
    pages, type of pages (addition, subtraction, etc.).
