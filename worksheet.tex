@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+
+\usepackage{booktabs}
+\usepackage[left=.7in, right=.7in, top=.8in, bottom=.8in]{geometry}
+
+\usepackage{xlop}
+
+\usepackage{pgffor}
+\usepackage{mathpazo}
+
+\newcommand\problem[3]{%
+    $\begin{array}{r}
+        #1 \\
+        #2 #3 \\
+        \hline
+    \end{array}$
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Math Homework}
+\fancyhead[C]{\thepage}
+\fancyhead[R]{\today}
+\fancyfoot{}
+
+
+\begin{document}
+\huge\centering
+% Adjust top number in loop as needed
+\foreach \c in {1,2,...,7}{%
+    \begin{tabular}{cccc}
+        \input{tmp\c}
+    \end{tabular}
+}%
+\end{document}
